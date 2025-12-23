@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Digital Marketing{% endblock %}
+
+{% block body %}
+
+<!-- HERO -->
+<section class="dm-hero">
+  <div class="container text-center reveal">
+    <h1>Digital Marketing That Delivers Measurable Growth</h1>
+    <p>
+      We craft data-driven digital marketing strategies that help brands increase
+      visibility, attract the right audience, and achieve sustainable business growth.
+    </p>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="dm-services">
+  <div class="container text-center reveal">
+    <h2>Our Digital Marketing Services</h2>
+
+    <div class="row g-4 mt-4">
+      <div class="col-md-4"><div class="dm-card">SEO & Organic Growth Strategies</div></div>
+      <div class="col-md-4"><div class="dm-card">Social Media Marketing & Brand Engagement</div></div>
+      <div class="col-md-4"><div class="dm-card">Performance Marketing & Paid Advertising</div></div>
+      <div class="col-md-4"><div class="dm-card">Content Strategy Aligned with User Intent</div></div>
+      <div class="col-md-4"><div class="dm-card">Digital Campaigns for Lead Generation</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- APPROACH -->
+<section class="dm-approach">
+  <div class="container text-center reveal">
+    <h2>Our Approach: Market Research, Analytics, Creativity & Technology</h2>
+    <p>
+      We combine deep market research, analytics-driven insights, and creative execution
+      to design campaigns that align perfectly with your business goals.
+    </p>
+  </div>
+</section>
+
+<!-- RESULTS -->
+<section class="dm-results">
+  <div class="container text-center reveal">
+    <h2>Performance-Driven Results</h2>
+
+    <div class="row g-4 mt-4">
+      <div class="col-md-3"><div class="result-box">Increased Visibility</div></div>
+      <div class="col-md-3"><div class="result-box">Targeted Audience Reach</div></div>
+      <div class="col-md-3"><div class="result-box">Higher Conversions</div></div>
+      <div class="col-md-3"><div class="result-box">Continuous Optimization</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="dm-cta">
+  <div class="container text-center reveal">
+    <h2>Ready to Accelerate Your Digital Growth?</h2>
+    <p>
+      Start a conversation with our experts and build a strategy that delivers results.
+    </p>
+    <button class="cta-btn" id="strategyBtn">
+      Request a Strategy Session
+    </button>
+  </div>
+</section>
+
+<script src="{% static 'digital.js' %}"></script>
+{% endblock %}

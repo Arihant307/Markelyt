@@ -1,0 +1,79 @@
+/* HERO */
+.marketing-hero {
+  background: linear-gradient(90deg, #0a2540, #0f766e);
+  padding: 90px 0;
+  color: #e5f6ff;
+}
+
+.marketing-hero h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+
+.marketing-hero p {
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.8;
+}
+
+/* SERVICES */
+.marketing-services {
+  background: #ecfeff;
+  padding: 80px 0;
+}
+
+.section-title {
+  font-weight: 700;
+}
+
+.marketing-card {
+  background: #0f766e;
+  color: #e5f6ff;
+  padding: 30px;
+  border-radius: 12px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+/* APPROACH */
+.marketing-approach {
+  background: #f0fdfa;
+  padding: 80px 0;
+}
+
+.marketing-approach p {
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.8;
+}
+
+/* RESULTS */
+.marketing-results {
+  background: linear-gradient(135deg, #0a2540, #164e63);
+  padding: 80px 0;
+  color: #e5f6ff;
+}
+
+.result-box {
+  border: 1px solid #22d3ee;
+  padding: 25px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+/* CTA */
+.marketing-cta {
+  background: linear-gradient(90deg, #fafafa, #ffffff);
+  padding: 80px 0;
+  color: #e5f6ff;
+}
+
+.cta-btn {
+  background: #22d3ee;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  margin-top: 15px;
+  transition: 0.3s ease;
+}

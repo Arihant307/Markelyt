@@ -1,0 +1,104 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}About us{% endblock title %}
+
+{% block body %}
+
+<!-- ================= HERO (FULL WIDTH FIXED) ================= -->
+<div class="hero-wrapper">
+  <img src="{% static 'img/Third.jpg' %}" class="hero-img" alt="Hero Image">
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content-wrapper">
+    <div class="hero-content">
+      <h1>Accelerate Your Brand's Growth</h1>
+      <p>
+        We specialize in product marketing, digital strategies for established
+        businesses, and launch marketing for startups.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- ================= EXPERTISE ================= -->
+<div class="container my-5 text-center">
+  <h1 class="section-heading">Our Expertise Drives Results</h1>
+</div>
+
+<!-- ================= SERVICES ================= -->
+<div class="container my-5">
+  <div class="row g-4">
+
+    <div class="col-md-4">
+      <div class="card service-card">
+        <img src="{% static 'img/Marketing.jpg' %}" class="card-img-top service-img">
+        <div class="card-body">
+          <h5>Product Marketing</h5>
+          <p>Strategically market your products across platforms.</p>
+          <a href="/marketing" class="service-btn">Explore</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card service-card">
+        <img src="{% static 'img/Digital.jpg' %}" class="card-img-top service-img">
+        <div class="card-body">
+          <h5>Digital Marketing</h5>
+          <p>SEO, social media & performance-driven strategies.</p>
+          <a href="/digital" class="service-btn">Explore</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card service-card">
+        <img src="{% static 'img/web.jpg' %}" class="card-img-top service-img">
+        <div class="card-body">
+          <h5>Web Development</h5>
+          <p>Conversion-focused websites for modern brands.</p>
+          <a href="/web" class="service-btn">Explore</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ================= PARTNER TEXT ================= -->
+<div class="container my-5 text-center partner-section">
+  <h1>Your Growth Partner, Not Just a Service Provider</h1>
+  <p>
+    At Markelyt, we're more than consultants—we're your dedicated growth partners.
+  </p>
+</div>
+
+<!-- ================= TESTIMONIALS ================= -->
+<div class="container my-5">
+  <h2 class="text-center fw-bold mb-5">What Our Clients Say</h2>
+
+  <div class="row g-4">
+    {% for _ in "123" %}
+    <div class="col-md-4">
+      <div class="testimonial-card">
+        <p>"Outstanding results and true partnership."</p>
+        <span>— Client</span>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+<!-- ================= CTA ================= -->
+<section class="cta-section">
+  <div class="container text-center">
+    <h2>Ready to Grow Your Brand?</h2>
+    <p>Let’s build something impactful together.</p>
+    <a href="contact" class="cta-btn">Get in Touch</a>
+  </div>
+</section>
+
+<script src="{% static 'home.js' %}"></script>
+{% endblock body %}

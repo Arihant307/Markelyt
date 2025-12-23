@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}About Us{% endblock title %}
+
+{% block body %}
+
+<!-- ================= ABOUT INTRO ================= -->
+
+<div class="container my-5 text-center about-intro">
+    <h1 class="fw-bold mb-4">About Markelyt Agency</h1>
+
+    <p class="mx-auto about-text">
+        We're a team of passionate strategists, creatives, and innovators dedicated
+        to helping brands thrive in the digital world. From startups to established
+        giants, we partner with businesses to unlock their full potential through
+        smart marketing and cutting-edge solutions.
+    </p>
+</div>
+
+<!-- ================= OUR MISSION ================= -->
+
+<section class="dark-section">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <div class="col-lg-6 mb-4 mb-lg-0 position-relative mission-img-wrap">
+        <div class="gold-box"></div>
+        <img src="{% static 'img/mission.jpg' %}" class="img-fluid rounded mission-img" alt="Our Mission">
+      </div>
+
+      <div class="col-lg-6 text-white">
+        <h2 class="section-title">Our Mission</h2>
+        <p class="section-text">
+          Our mission is simple and clear — to deliver innovative digital marketing
+          solutions that help businesses grow, connect with their audience, and
+          achieve measurable long-term success.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= OUR VISION ================= -->
+
+<section class="dark-section">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <div class="col-lg-6 text-white mb-4 mb-lg-0">
+        <h2 class="section-title">Our Vision</h2>
+        <p class="section-text vision-text">
+          We strive to empower every business to leverage digital marketing, stay
+          ahead of trends, and grow as a trusted brand. Our vision is to become a
+          leading digital marketing agency by shaping real success stories.
+        </p>
+      </div>
+
+      <div class="col-lg-6 position-relative vision-img-wrap">
+        <img src="{% static 'img/mission.jpg' %}" class="img-fluid rounded vision-img" alt="Our Vision">
+        <div class="gold-strip"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+
+<section class="cta-section">
+  <div class="container text-center text-white">
+    <h2 class="fw-bold mb-4">
+      Ready to transform your digital presence?
+    </h2>
+
+    <a href="#contact" class="btn cta-btn" style="background: black; color: white;">
+      Connect With Us
+    </a>
+  </div>
+</section>
+
+<!-- JS -->
+<script src="{% static 'about.js' %}"></script>
+
+{% endblock body %}

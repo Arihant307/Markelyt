@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Marketing Services{% endblock %}
+
+{% block body %}
+
+<!-- ================= HERO ================= -->
+<section class="marketing-hero">
+  <div class="container text-center">
+    <h1>Marketing That Drives Real Results</h1>
+    <p>
+      We combine strategy, creativity, and data-driven insights to help brands
+      grow visibility, build trust, and achieve measurable success.
+    </p>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section class="marketing-services">
+  <div class="container text-center">
+    <h2 class="section-title" style="color: black;">Our Marketing Services</h2>
+
+    <div class="row g-4 mt-4">
+      <div class="col-md-4">
+        <div class="marketing-card">Product Marketing & Go-To-Market Strategy</div>
+      </div>
+      <div class="col-md-4">
+        <div class="marketing-card">Digital Marketing for Startups & Brands</div>
+      </div>
+      <div class="col-md-4">
+        <div class="marketing-card">Brand Positioning & Messaging</div>
+      </div>
+      <div class="col-md-4">
+        <div class="marketing-card">Social Media & Performance Campaigns</div>
+      </div>
+      <div class="col-md-4">
+        <div class="marketing-card">Marketing Strategy Aligned with Growth</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= APPROACH ================= -->
+<section class="marketing-approach">
+  <div class="container text-center">
+    <h2>Our Approach: Creativity, Analytics & Market Insight</h2>
+    <p>
+      We don’t just create campaigns — we analyze data, understand market trends,
+      and align every strategy with your business goals to deliver sustainable growth.
+    </p>
+  </div>
+</section>
+
+<!-- ================= RESULTS ================= -->
+<section class="marketing-results">
+  <div class="container text-center">
+    <h2>Measurable Results You Can Count On</h2>
+
+    <div class="row g-4 mt-4">
+      <div class="col-md-3">
+        <div class="result-box">Increased Visibility</div>
+      </div>
+      <div class="col-md-3">
+        <div class="result-box">Stronger Brand Identity</div>
+      </div>
+      <div class="col-md-3">
+        <div class="result-box">Higher Conversions</div>
+      </div>
+      <div class="col-md-3">
+        <div class="result-box">Sustainable Growth</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="marketing-cta">
+  <div class="container text-center">
+    <h2 style="color: black;">Ready to Elevate Your Marketing?</h2>
+    <p class="text-black">Let’s build a strategy that delivers real impact.</p>
+    <button class="cta-btn" onclick="window.location.href='/contact '">Request a Strategy Session</button>
+  </div>
+</section>
+
+<script src="{% static 'marketing.js' %}"></script>
+{% endblock %}

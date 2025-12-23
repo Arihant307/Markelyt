@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} Contact {% endblock title %}
+
+{% block body %}
+
+<!-- ================= HERO ================= -->
+<section class="contact-hero">
+  <div class="container text-center text-white">
+    <h1>Get in Touch with Us</h1>
+    <p>
+      Whether you're a startup launching your first product or an established
+      brand ready to scale, we're here to collaborate and grow together.
+    </p>
+  </div>
+</section>
+
+<!-- ================= FORM SECTION ================= -->
+<section class="contact-main">
+  <div class="container">
+
+    <h2 class="text-center mb-5">Start Your Conversation Today</h2>
+
+    <div class="row justify-content-center align-items-start g-4">
+
+      <!-- FORM -->
+      <div class="col-md-5">
+        <div class="contact-card">
+          <h6 class="mb-3 text-primary">Send Us a Message</h6>
+
+          <form method="POST" action="/contact">
+            {% csrf_token %}
+
+            <input type="text" name="name" placeholder="Your Name" required>
+
+            <input type="email" name="email" placeholder="Your Email">
+
+            <input 
+              type="tel" 
+              name="phone" 
+              placeholder="Your Contact Number"
+              pattern="[6-9]{1}[0-9]{9}"
+              maxlength="10"
+              required
+            >
+
+            <select name="inquiry">
+              <option value="">Select Inquiry Type</option>
+              <option value="Marketing">Marketing</option>
+              <option value="Website">Website</option>
+              <option value="Branding">Branding</option>
+            </select>
+
+            <textarea name="desc" rows="4" placeholder="Tell us about your needs..."></textarea>
+
+            <button type="submit" class="send-btn">Send Message</button>
+          </form>
+
+          {% comment %} {% if success %}
+            <p class="text-success mt-3">✅ Message sent successfully!</p>
+          {% endif %} {% endcomment %}
+          {% if request.GET.success %}
+              <p class="text-success mt-3">
+              ✅ Message sent successfully!
+              </p>
+          {% endif %}
+        </div>
+      </div>
+
+      <!-- INFO -->
+      <div class="col-md-5">
+        <div class="contact-info">
+          <h6>Other Ways to Connect</h6>
+          <p><strong>Email:</strong> markelyt.agency@gmail.com</p>
+          <p><strong>Phone:</strong> +91 8875456403, +91 7060258962</p>
+          <p><strong>Business Hours:</strong> Mon–Fri, 9AM–6PM</p>
+          <p><strong>Insta Handle:</strong> markelyt.agency</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{% endblock body %}
