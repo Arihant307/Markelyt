@@ -16,6 +16,10 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
+STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
@@ -25,7 +29,7 @@ SECRET_KEY = "django-insecure-+p!uq+abtzb^71!y@^ok8(zpfthy3j)t4yqkgiv+=011qm2=)=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -41,7 +45,9 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    
     "django.middleware.security.SecurityMiddleware",
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
