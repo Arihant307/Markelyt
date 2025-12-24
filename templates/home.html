@@ -7,7 +7,7 @@
 
 <!-- ================= HERO (FULL WIDTH FIXED) ================= -->
 <div class="hero-wrapper">
-  <img src="{% static 'img/Third.jpg' %}" class="hero-img" alt="Hero Image">
+  <img src="{% static 'img/Third.jpg' %}" class="hero-img" alt="Hero Image" style="max-width: 100%">
 
   <div class="hero-overlay"></div>
 
@@ -68,7 +68,7 @@
 </div>
 
 <!-- ================= PARTNER TEXT ================= -->
-<div class="container my-5 text-center partner-section">
+<div class="container my-5 text-center partner-section" style="height:30vh;">
   <h1>Your Growth Partner, Not Just a Service Provider</h1>
   <p>
     At Markelyt, we're more than consultants—we're your dedicated growth partners.
@@ -76,7 +76,7 @@
 </div>
 
 <!-- ================= TESTIMONIALS ================= -->
-<div class="container my-5">
+{% comment %} <div class="container my-5">
   <h2 class="text-center fw-bold mb-5">What Our Clients Say</h2>
 
   <div class="row g-4">
@@ -89,10 +89,35 @@
     </div>
     {% endfor %}
   </div>
+</div> {% endcomment %}
+<div class="container my-5" style="height:50vh; ">
+<h2 class="text-center fw-bold mb-5">What Our Clients Say</h2>
+
+<div class="row g-4">
+  <div class="col-md-4">
+    <div class="testimonial-card">
+      <p>“Markelyt truly understood our vision and delivered a website that reflects our brand perfectly.”</p>
+      <span>— Vardhman</span>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="testimonial-card">
+      <p>“The team’s attention to detail and marketing strategy helped us reach the right audience.”</p>
+      <span>— Ritika</span>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="testimonial-card">
+      <p>“From design to execution, everything was smooth and result-driven. Highly recommended.”</p>
+      <span>— Keshav</span>
+    </div>
+  </div>
+</div>
 </div>
 
+
 <!-- ================= CTA ================= -->
-<section class="cta-section">
+<section class="cta-section" style="background: linear-gradient(135deg, #0a2540, #0f766e);">
   <div class="container text-center">
     <h2>Ready to Grow Your Brand?</h2>
     <p>Let’s build something impactful together.</p>

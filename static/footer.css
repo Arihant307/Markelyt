@@ -1,0 +1,88 @@
+.site-footer {
+  background: linear-gradient(135deg, #201f1f, #222222);
+  color: #f4f4f4;
+  padding: 70px 20px 30px;
+}
+
+.footer-wrapper {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+}
+
+.footer-logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.footer-text {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #fffefe;
+}
+
+.footer-col h4 {
+  margin-bottom: 14px;
+  font-size: 1.1rem;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.footer-col ul li:hover {
+  color: #22d3ee;
+}
+
+/* Newsletter */
+.footer-col input {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 6px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.footer-col button {
+  width: 100%;
+  padding: 10px;
+  background: #22d3ee;
+  border: none;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.footer-col button:hover {
+  background: #0a2540;
+  color: white;
+}
+
+/* Bottom bar */
+.footer-bottom {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#scrollTopBtn {
+  background: #22d3ee;
+  border: none;
+  border-radius: 50%;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-size: 1rem;
+}
