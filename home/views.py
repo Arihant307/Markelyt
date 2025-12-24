@@ -13,7 +13,7 @@ def index(request):
     return render(request,'home.html')
 
 def about(request):
-    return render(request, 'About.html')
+    return render(request, 'about.html')
     # return HttpResponse("This is AboutPage and It is created By Arihant")
 
 def services(request):
