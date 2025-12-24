@@ -36,7 +36,7 @@ def contact(request):
         return redirect(f"{reverse('Contact')}?success=1")
 
 
-    return render(request,'Contact.html')
+    return render(request,'contact.html')
 
 # def home(request):
 #     return render(request,'Home.html')
