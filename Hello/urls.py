@@ -17,6 +17,12 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path,include
+from django.contrib.sitemaps.views import sitemap
+from home.sitemaps import HomeSitemap
+
+sitemaps = {
+    'home': HomeSitemap,
+}
 
 admin.site.site_header = "MARKELYT Admin"
 admin.site.site_title = "MARKELYT Admin Portal"
@@ -31,6 +37,7 @@ urlpatterns = [
     path('home',include('home.urls')),
     path('web',include('home.urls')),
     path('marketing',include('home.urls')),
-    path('digital',include('home.urls'))
+    path('digital',include('home.urls')),
+    path("sitemap.xml", sitemap, {"sitemaps": sitemaps})
 
 ]
